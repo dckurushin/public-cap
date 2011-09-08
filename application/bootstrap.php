@@ -111,6 +111,9 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+ 
+ 
+ 
 Route::set('indexPage', '')//if this is blank query string
 	->defaults(array(
 		'controller' => 'site',
@@ -122,3 +125,12 @@ Route::set('default', '(<controller>(/<action>(/<id>))).html')//for example site
 		'controller' => 'site',
 		'action'     => 'index',
 	));
+
+/*
+Route::set('default', '(<controller>(/<action>(/<id>)))')//for example site/index.html
+	->defaults(array(
+		'controller' => 'site',
+		'action'     => 'index',
+	));
+ * 
+ */
