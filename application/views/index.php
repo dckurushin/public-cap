@@ -8,6 +8,7 @@
         <?php 
             // echo Form::button('save', 'Save Profile', array('type' => 'submit'));
         
+        echo $test;
         
         ?>
         

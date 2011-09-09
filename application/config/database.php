@@ -2,34 +2,7 @@
 
 return array
 (
-	'default' => array
-	(
-		'type'       => 'mysql',
-		'connection' => array(
-			/**
-			 * The following options are available for MySQL:
-			 *
-			 * string   hostname     server hostname, or socket
-			 * string   database     database name
-			 * string   username     database username
-			 * string   password     database password
-			 * boolean  persistent   use persistent connections?
-			 * array    variables    system variables as "key => value" pairs
-			 *
-			 * Ports and sockets may be appended to the hostname.
-			 */
-			'hostname'   => 'localhost',
-			'database'   => 'public-cap',
-			'username'   => 'capMaster',
-			'password'   => 'bobik',
-			'persistent' => FALSE,
-		),
-		'table_prefix' => '',
-		'charset'      => 'utf8',
-		'caching'      => FALSE,
-		'profiling'    => TRUE,
-	),
-	'alternate' => array(
+	'default' => array(
 		'type'       => 'pdo',
 		'connection' => array(
 			/**
@@ -40,9 +13,9 @@ return array
 			 * string   password    database password
 			 * boolean  persistent  use persistent connections?
 			 */
-			'dsn'        => 'mysql:host=localhost;dbname=kohana',
-			'username'   => 'root',
-			'password'   => 'r00tdb',
+			'dsn'        => 'mysql:host=localhost;dbname=public-cap',
+			'username'   => 'capMaster',
+			'password'   => 'bobik',
 			'persistent' => FALSE,
 		),
 		/**
@@ -50,7 +23,7 @@ return array
 		 *
 		 * string   identifier  set the escaping identifier
 		 */
-		'table_prefix' => '',
+		'table_prefix' => 'tbl_',
 		'charset'      => 'utf8',
 		'caching'      => FALSE,
 		'profiling'    => TRUE,
